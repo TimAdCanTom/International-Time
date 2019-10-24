@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
+body {
+    background-color: whitesmoke;
+    font-family: 'Hind';
+    background-size: auto;
+    color:#ffffff;
+}
+.Container {
+    padding: 0;
+    margin: 0;
+}
+.Heading {
+    text-align: center;
+}
+#Background {
+    margin: auto;
+    height:100%;
+    max-width: 800px;
+}
+#TitleContain {
+    background: rgba(00, 00, 00, 0.5);
+    margin: 25px 0 5px 0;
+    border: 5px solid black;
+    border-radius: 15px;
+}
+#Title {
+    font-size: 3.7em;
+    margin: 0;
+}
+#Subtitle {
+    font-size: 2em;
+    margin: 0;
+    color:#ffffff;
+}
+#LocalTimeBox {
+    background-color: rgba(00, 00, 00, 0.5);
+    padding-left: 15px;
+    font-size: 1em;
+    color: #ffffff;
+    border: 2px rgba(00, 00, 00, 0.01) solid;
+
+}
+#ClockBox {
+    background-color: rgba(00, 00, 00, 0.5);
+    border: 5px solid black;
+    border-radius: 15px;
+}
+#CityName {
+    font-size: 3em;
+    margin: .45em auto;
+}
+#TheClockContainer {
+    height: 465px;
+    width: auto;
+}
+.clock {
+    background-color: rgba(256, 256, 256, 0.90);
+    border-radius: 200px;
+    width: 400px;
+    height: 400px;
+    margin: auto auto .45em auto;
+    position: relative;
+}
+.hand{
+    position: absolute;
+    width: 8px;
+    height: 80px;
+    background-color: black;
+    border-radius: 5px;
+
+
+    bottom: 196px;
+    left: 196px;
+
+    transform-origin: 50% 100%;
+}
+.minute {
+    height: 150px;
+}
+.second {
+    left: 198px;
+    width: 4px;
+    height: 175px;
+    background-color: orangered;
+}
+/* Slider Style */
+label {
+    margin: auto auto 15px 90%;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+} 
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  .slider.round {
+    border-radius: 34px;
+  }
+  .slider.round:before {
+    border-radius: 50%;
+  }
+#IntTimeHeading {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.25em;
+}
+#ButtonsBox ul {
+    padding: 0;
+    text-align: center;
+    margin: .3em 0 0 0;
+    list-style: none;
+}
+#ButtonsBox li {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 0 0 0.1em;
+}
+#ButtonsBox ul button {
+    height: 34px;
+    background-color: rgba(256, 256, 256, 0.75); 
+    border: 2.5px solid #000000;
+    border-radius: 7.5px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 1em;
+}

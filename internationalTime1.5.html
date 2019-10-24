@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styleInternationalTime1.5.css">
+    <title>International Time 1.5</title>   
+</head>
+<body background="images_web_app/Auckland.jpg">
+    <div class ="Container" id="Background">
+        <div class ="Container" id="TitleContain">
+            <h1 class="Heading" id="Title">International Time</h1>
+            <h2 class="Heading" id="Subtitle">The time of a different City</h2>
+        </div>
+        <div class ="Container" id="ClockBox">
+            <div class ="Container" id="LocalTimeBox">
+                    <p id ="LocalTimeHeading">Local time: <span id="LocalTime"></span></p>
+            </div>
+            <h2 class="Heading" id="CityName">Auckland</h2>
+            <div id="TheClockContainer">
+                <div class="clock">
+                    <div class="hand second"></div>
+                    <div class="hand minute"></div>
+                    <div class="hand hour"></div>
+                </div>
+<!--                    <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                    </label>  -->
+                    <p id="IntTimeHeading"><span id="IntTime"></span></p> 
+
+            </div>
+        </div>
+        <div id="ButtonsBox">
+            <ul>
+                <li>Choose a City:</li>
+                <button id="Akl" class="Button" title="Time in Auckland">Auckland</button>
+                <button id="Syd" class="Button" title="Time in Sydney">Sydney</button>
+                <button id="Nyc" class="Button" title="Time in New York">New York</button>
+                <button id="Ldn" class="Button" title="Time in London">London</button>
+                <button id="Bei" class="Button" title="Time in Beijing">Beijing</button>
+                <button id="Mnl" class="Button" title="Time in Manila">Manila</button>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src = "internationalTime1.5.js"></script>
+</html>
